@@ -1,5 +1,6 @@
 
 import './App.css'
+import NavBar from './Components/NavBar/NavBar'
 
 function App() {
  
@@ -7,7 +8,7 @@ function App() {
   return (
     <>
       
-      <h1>My Ticket</h1>
+      <NavBar></NavBar>
       
     </>
   )
