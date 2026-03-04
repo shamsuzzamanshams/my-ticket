@@ -3,45 +3,35 @@ import vector1 from '../../assets/vector1.png';
 
 const Banner = ({ inProgressCount = 0, resolvedCount = 0 }) => {
 	return (
-		<div className='flex max-w-[1200px] mx-auto gap-3 mt-16'>
+		<div className="flex flex-col md:flex-row max-w-[1200px] mx-auto gap-3 mt-16 px-4">
 
-			{/* In Progress */}
 			<div
-				className="hero max-w-[708px] mx-auto bg-gradient-to-br from-[#E8F1FF] to-[#F7FAFF] rounded-xl"
+				className="w-full rounded-xl text-black  p-10"
 				style={{
-					backgroundImage: `url(${vector1})`,
+					backgroundImage: `linear-gradient(to bottom right, #6D28D9, #7C3AED, #9333EA), url(${vector1})`,
 					backgroundRepeat: "no-repeat",
 					backgroundPosition: "right top",
-					backgroundSize: "contain"
+					backgroundSize: "cover",
 				}}
 			>
-				<div className="hero-overlay bg-transparent"></div>
-
-				<div className="hero-content text-center">
-					<div className="max-w-md">
-						<h1 className="mb-5 text-2xl">In-Progress</h1>
-						<h1 className="mb-5 text-5xl font-bold">{inProgressCount}</h1>
-					</div>
+				<div className="text-center">
+					<h1 className="mb-3 text-2xl font-medium">In-Progress</h1>
+					<h1 className="text-6xl font-bold">{inProgressCount}</h1>
 				</div>
 			</div>
 
-			{/* Resolved */}
 			<div
-				className="hero max-w-[708px] mx-auto bg-gradient-to-br from-[#E8F1FF] to-[#F7FAFF] rounded-xl"
+				className="w-full rounded-xl text-black  p-10"
 				style={{
-					backgroundImage: `url(${vector1})`,
+					backgroundImage: `linear-gradient(to bottom right, #22C55E, #16A34A, #047857), url(${vector1})`,
 					backgroundRepeat: "no-repeat",
 					backgroundPosition: "right top",
-					backgroundSize: "contain"
+					backgroundSize: "cover",
 				}}
 			>
-				<div className="hero-overlay bg-transparent"></div>
-
-				<div className="hero-content text-center">
-					<div className="max-w-md">
-						<h1 className="mb-5 text-2xl">Resolved</h1>
-						<h1 className="mb-5 text-5xl font-bold">{resolvedCount}</h1>
-					</div>
+				<div className="text-center">
+					<h1 className="mb-3 text-2xl font-medium">Resolved</h1>
+					<h1 className="text-6xl font-bold">{resolvedCount}</h1>
 				</div>
 			</div>
 

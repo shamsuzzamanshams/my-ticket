@@ -17,7 +17,7 @@ const NavBar = () => {
 				<button>Blog</button>
 				<button>Download</button>
 				<button>Contact</button>
-				<button className="p-2 rounded-xl text-white bg-[linear-gradient(152deg,#000_0%,#130B2D_60%,#E9E9E9_100%)]">
+				<button className="p-2 rounded-xl text-white bg-[linear-gradient(to_bottom_right,#6D28D9,#7C3AED,#9333EA)]">
 					+ New Ticket
 				</button>
 
@@ -40,7 +40,7 @@ const NavBar = () => {
 					<li><button>Blog</button></li>
 					<li><button>Download</button></li>
 					<li><button>Contact</button></li>
-					<button className="p-2 rounded-xl text-white bg-[linear-gradient(152deg,#000_0%,#130B2D_60%,#E9E9E9_100%)]">
+					<button className="p-2 rounded-xl text-white bg-[linear-gradient(to_bottom_right,#6D28D9,#7C3AED,#9333EA)]">
 						+ New Ticket
 					</button>
 				</ul>

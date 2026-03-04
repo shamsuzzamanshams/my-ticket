@@ -3,18 +3,18 @@ import calander from '../../assets/ri_calendar_line.png'
 
 const Cards = ({ allCard, handleTask }) => {
 	const [isSelected, setIsSelected] = useState(false);
-	const handleSelect = (card) => {
+	const handleSelect = () => {
 		setIsSelected(true);
 
 
 
-		console.log(card);
+		
 	}
 	return (
 
 
-		<div className='mt-4'>
-			<div className="card w-80 md:w-100 h-50 mr-5 bg-base-100 card-md shadow-sm">
+		<div className='mt-4 mr-4'>
+			<div className="card w-80 md:w-100 h-50 bg-base-100 card-md shadow-sm">
 				<div className="card-body">
 					<div className='flex justify-between items-center'>
 						<h2 className="card-title">{allCard.title}</h2>
