@@ -1,0 +1,137 @@
+[
+	{
+		"id": 1,
+		"title": "Login page error",
+		"description": "Users are unable to log in due to a server authentication issue.",
+		"customer": "Acme Corp",
+		"priority": "High",
+		"status": "Open",
+		"createdAt": "2026-02-20"
+	},
+	{
+		"id": 2,
+		"title": "Update billing information",
+		"description": "Customer requested to update credit card details for subscription.",
+		"customer": "Beta Solutions",
+		"priority": "Medium",
+		"status": "In Progress",
+		"createdAt": "2026-02-18"
+	},
+	{
+		"id": 3,
+		"title": "Feature request for export",
+		"description": "Customer wants the ability to export reports in CSV format.",
+		"customer": "Delta Industries",
+		"priority": "Low",
+		"status": "Open",
+		"createdAt": "2026-02-15"
+	},
+	{
+		"id": 4,
+		"title": "Dashboard loading slowly",
+		"description": "The analytics dashboard takes more than 10 seconds to load.",
+		"customer": "NextGen Tech",
+		"priority": "High",
+		"status": "In Progress",
+		"createdAt": "2026-02-22"
+	},
+	{
+		"id": 5,
+		"title": "Password reset email not received",
+		"description": "Customer reports not receiving password reset emails.",
+		"customer": "Global Mart",
+		"priority": "High",
+		"status": "Open",
+		"createdAt": "2026-02-21"
+	},
+	{
+		"id": 6,
+		"title": "Mobile UI alignment issue",
+		"description": "Buttons overlap on smaller mobile screens.",
+		"customer": "Urban Retail",
+		"priority": "Medium",
+		"status": "Open",
+		"createdAt": "2026-02-19"
+	},
+	{
+		"id": 7,
+		"title": "API integration support",
+		"description": "Customer needs help integrating the API with their CRM.",
+		"customer": "TechNova",
+		"priority": "Medium",
+		"status": "Pending",
+		"createdAt": "2026-02-17"
+	},
+	{
+		"id": 8,
+		"title": "Data sync failure",
+		"description": "Automated data synchronization failed during nightly job.",
+		"customer": "SmartLogix",
+		"priority": "High",
+		"status": "Open",
+		"createdAt": "2026-02-23"
+	},
+	{
+		"id": 9,
+		"title": "Add dark mode option",
+		"description": "Customer requested a dark theme for better usability at night.",
+		"customer": "Creative Studio",
+		"priority": "Low",
+		"status": "Backlog",
+		"createdAt": "2026-02-14"
+	},
+	{
+		"id": 10,
+		"title": "Invoice generation bug",
+		"description": "Generated invoices contain incorrect tax calculations.",
+		"customer": "Prime Finance",
+		"priority": "High",
+		"status": "In Progress",
+		"createdAt": "2026-02-24"
+	},
+	{
+		"id": 11,
+		"title": "Account suspension inquiry",
+		"description": "Customer wants clarification on why their account was suspended.",
+		"customer": "Eco Supplies",
+		"priority": "Medium",
+		"status": "Open",
+		"createdAt": "2026-02-16"
+	},
+	{
+		"id": 12,
+		"title": "Notification settings improvement",
+		"description": "Customer wants granular control over email notifications.",
+		"customer": "Bright Labs",
+		"priority": "Low",
+		"status": "Backlog",
+		"createdAt": "2026-02-13"
+	},
+	{
+		"id": 13,
+		"title": "Report download timeout",
+		"description": "Large reports fail to download due to timeout issues.",
+		"customer": "DataWorks",
+		"priority": "High",
+		"status": "Open",
+		"createdAt": "2026-02-25"
+	},
+	{
+		"id": 14,
+		"title": "Search functionality enhancement",
+		"description": "Customer requested advanced filters in the search module.",
+		"customer": "Insight Analytics",
+		"priority": "Medium",
+		"status": "Pending",
+		"createdAt": "2026-02-12"
+	},
+	{
+		"id": 15,
+		"title": "User role permission bug",
+		"description": "Admin users cannot assign roles to new team members.",
+		"customer": "Vertex Systems",
+		"priority": "High",
+		"status": "In Progress",
+		"createdAt": "2026-02-26"
+	}
+]
