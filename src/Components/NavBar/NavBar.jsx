@@ -2,19 +2,50 @@ import React from 'react';
 
 const NavBar = () => {
 	return (
-		<div className="navbar bg-base-100 shadow-sm max-w-[1200px] mx-auto">
+		<div className="navbar bg-base-100 shadow-sm w-full md:max-w-[1200px] mx-auto px-4">
+
+			{/* Logo */}
 			<div className="flex-1">
 				<a className="btn btn-ghost text-xl">CS — Ticket System</a>
 			</div>
-			<div className="flex gap-5">
+
+			{/* Desktop Menu */}
+			<div className="hidden md:flex gap-5 items-center">
 				<button>Home</button>
 				<button>FAQ</button>
 				<button>Changelog</button>
 				<button>Blog</button>
 				<button>Download</button>
 				<button>Contact</button>
-				<button className='bg-[linear-gradient(152deg,_#000000_90%,_#FFFFFF_100%,_#130B2D_100%,#E9E9E9_100%)] p-2 rounded-xl'>+ New Ticket</button>
+				<button className="p-2 rounded-xl text-white bg-[linear-gradient(152deg,#000_0%,#130B2D_60%,#E9E9E9_100%)]">
+					+ New Ticket
+				</button>
+
+
 			</div>
+
+			{/* Mobile 3-dot Menu */}
+			<div className="md:hidden dropdown dropdown-end">
+				<label tabIndex={0} className="btn btn-ghost text-xl">
+					⋮
+				</label>
+
+				<ul
+					tabIndex={0}
+					className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-40"
+				>
+					<li><button>Home</button></li>
+					<li><button>FAQ</button></li>
+					<li><button>Changelog</button></li>
+					<li><button>Blog</button></li>
+					<li><button>Download</button></li>
+					<li><button>Contact</button></li>
+					<button className="p-2 rounded-xl text-white bg-[linear-gradient(152deg,#000_0%,#130B2D_60%,#E9E9E9_100%)]">
+						+ New Ticket
+					</button>
+				</ul>
+			</div>
+
 		</div>
 	);
 };

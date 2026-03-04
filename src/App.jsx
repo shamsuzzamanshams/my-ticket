@@ -4,6 +4,7 @@ import './App.css'
 import Banner from './Components/Banner/Banner'
 import Card from './Components/Card/Card'
 import NavBar from './Components/NavBar/NavBar'
+import Footer from './Components/Footer/Footer'
 
 function App() {
 
@@ -19,10 +20,11 @@ function App() {
     <>
       
       <NavBar></NavBar>
-      <Banner></Banner>
+      {/* <Banner></Banner> */}
       <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
         <Card cardDatapromise={cardDatapromise}></Card>
       </Suspense>
+      <Footer></Footer>
       
     </>
   )
