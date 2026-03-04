@@ -1,16 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import calander from '../../assets/ri_calendar_line.png'
 
-const Cards = ({ allCard }) => {
+const Cards = ({ allCard, handleTask }) => {
+	const [isSelected, setIsSelected] = useState(false);
+	const handleSelect = (card) => {
+		setIsSelected(true);
+
+
+
+		console.log(card);
+	}
 	return (
 
 
 		<div className='mt-4'>
-			<div className="card w-120 bg-base-100 card-md shadow-sm">
+			<div className="card w-100 bg-base-100 card-md shadow-sm">
 				<div className="card-body">
 					<div className='flex justify-between items-center'>
 						<h2 className="card-title">{allCard.title}</h2>
-						<button className="btn rounded-2xl">{allCard.status}</button>
+						<button onClick={() => { handleSelect(allCard),handleTask(allCard) }} className={`btn rounded-2xl ${!isSelected ? "bg-yellow-400" : "bg-green-400"}`}>
+							{!isSelected ? "In-Progress" : "Open"}</button>
 					</div>
 
 					<p className='text-left'>{allCard.description}</p>
