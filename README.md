@@ -131,8 +131,8 @@ Clicking **Complete Button**:
 ---
 
 ## 🔗 Submission
-- **Live Link :** YOUR_DEPLOYED_URL_HERE
-- **GitHub Repository:** YOUR_REPO_URL_HERE
+- **Live Link :** my-ticket-220101001.surge.sh
+- **GitHub Repository:**(https://github.com/shamsuzzamanshams/my-ticket)
 
 
 ### 📅 Deadline For 60 marks: 5th March, 2026 (11:59 pm ⏱️)
