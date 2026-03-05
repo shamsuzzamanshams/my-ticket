@@ -1,6 +1,7 @@
 import React, { use, useState } from 'react';
 import Cards from '../Cards/Cards';
 import Banner from '../Banner/Banner';
+import { toast, ToastContainer } from 'react-toastify';
 
 
 const Card = ({ cardDatapromise }) => {
@@ -18,6 +19,8 @@ const Card = ({ cardDatapromise }) => {
 		const remainingTask = selectedTask.filter(st => st.id !== Task.id)
 		setSelectedTask(remainingTask);
 		setResolve([...resolve, Task]);
+
+		toast("Completed");
 	}
 
 
@@ -65,6 +68,7 @@ const Card = ({ cardDatapromise }) => {
 
 										<div className="btn bg-green-500 mt-2">
 											<button onClick={() => handleResolve(task)}>Complete</button>
+
 										</div>
 									</div>
 								</div>
@@ -79,10 +83,10 @@ const Card = ({ cardDatapromise }) => {
 								<p>No resolved tasks yet.</p>
 								:
 								resolve.map((task) => (
-									
-									<div key={task.id} className='card w-80 md:w-90 mt-4 bg-blue-50 card-xs shadow-sm'>
+
+									<div key={task.id} className='card w-80 md:w-90 mt-4 bg-blue-100 card-xs shadow-sm'>
 										<div className="card-body">
-											<h2 className='font-semibold text-2xl text-left' >{task.title}</h2>
+											<h2 className='font-semibold text-2xl text-black text-left' >{task.title}</h2>
 										</div>
 									</div>
 
@@ -91,7 +95,9 @@ const Card = ({ cardDatapromise }) => {
 					</div>
 				</div>
 			</div>
+			<ToastContainer></ToastContainer>
 		</div>
+
 	);
 };
 

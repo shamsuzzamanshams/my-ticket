@@ -4,12 +4,12 @@ const NavBar = () => {
 	return (
 		<div className="navbar bg-base-100 shadow-sm w-full md:max-w-[1200px] mx-auto px-4">
 
-			{/* Logo */}
+
 			<div className="flex-1">
 				<a className="btn btn-ghost text-xl">CS — Ticket System</a>
 			</div>
 
-			{/* Desktop Menu */}
+
 			<div className="hidden md:flex gap-5 items-center">
 				<button>Home</button>
 				<button>FAQ</button>
@@ -24,7 +24,7 @@ const NavBar = () => {
 
 			</div>
 
-			{/* Mobile 3-dot Menu */}
+
 			<div className="md:hidden dropdown dropdown-end">
 				<label tabIndex={0} className="btn btn-ghost text-xl">
 					⋮

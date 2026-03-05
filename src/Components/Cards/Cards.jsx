@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import calander from '../../assets/ri_calendar_line.png'
+import { toast, ToastContainer } from 'react-toastify';
 
 const Cards = ({ allCard, handleTask }) => {
 	const [isSelected, setIsSelected] = useState(false);
 	const handleSelect = () => {
 		setIsSelected(true);
+		toast("In-Progress");
 
 
 
-		
+
 	}
 	return (
 
@@ -32,6 +34,7 @@ const Cards = ({ allCard, handleTask }) => {
 					</div>
 				</div>
 			</div>
+			<ToastContainer></ToastContainer>
 		</div>
 
 	);

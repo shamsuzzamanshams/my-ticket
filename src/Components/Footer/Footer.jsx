@@ -79,12 +79,12 @@ const Footer = () => {
 
 			</div>
 
-			{/* Horizontal Line */}
+
 			<div className="max-w-[1200px] mx-auto px-10">
 				<hr className="border-gray-300" />
 			</div>
 
-			{/* Copyright */}
+
 			<div className="text-center py-4 text-sm">
 				Copyright © {new Date().getFullYear()} — CS Ticket System. All rights reserved.
 			</div>
